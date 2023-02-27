@@ -56,7 +56,7 @@ You can choose to manually select your compiler of choice each build of the proj
 cargo build --target=x86_64-unknown-linux-gnu
 
 # Test remotely on ARM
-cargo build  --target=armv7-unknown-linux-gnueabihf
+cargo build --target=armv7-unknown-linux-gnueabihf
 ```
 
 If you find yourself doing a lot of local testing, you can comment out the targets in the `config.toml` file. Then you can test locally as you normally would:
