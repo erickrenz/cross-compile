@@ -7,13 +7,13 @@ This is an example of cross-compiling from x86 (`x86_64`) to ARM (`aarch64`).
 1. Install the GCC cross-compilation toolchain with your default package manager (apt-get, dnf, pacman, brew, ...)
 
 ```bash
-$ sudo apt-get install gcc-aarch64-linux-gnu
+$ sudo apt-get install gcc-arm-linux-gnueabihf
 ```
 
 2. Install the target platform with rustup
 
 ```bash
-$ rustup target add aarch64-unknown-linux-gnu
+$ rustup target add armv7-unknown-linux-gnueabihf
 ```
 
 3. Within your project, create cargo `config.toml` file
@@ -27,10 +27,10 @@ $ touch config.toml
 
 ```toml
 [build]
-target = "aarch64-unknown-linux-gnu"
+target = "armv7-unknown-linux-gnueabihf"
 
-[target.aarch64-unknown-linux-gnu]
-linker = "gcc-aarch64-linux-gnu"
+[target.armv7-unknown-linux-gnueabihf]
+linker = "arm-linux-gnueabihf-gcc"
 ```
 
 5. Build and test your excecutable on the target system
