@@ -2,7 +2,7 @@
 
 ## Usage
 
-This is an example of cross-compiling from x86 (`x86_64`) to ARM (`aarch64`).
+This is an example of cross-compiling from x86 (`x86_64`) to ARM (`armv7`).
 
 1. Install the GCC cross-compilation toolchain with your default package manager (apt-get, dnf, pacman, brew, ...)
 
